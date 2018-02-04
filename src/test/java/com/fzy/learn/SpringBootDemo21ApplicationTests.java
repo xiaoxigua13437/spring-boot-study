@@ -1,4 +1,4 @@
-package com.roncoo.education;
+package com.fzy.learn;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
