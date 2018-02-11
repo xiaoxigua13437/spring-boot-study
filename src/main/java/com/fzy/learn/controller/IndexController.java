@@ -1,11 +1,10 @@
-/**
- * 2015-2016 龙果学院 (www.roncoo.com)
- */
 package com.fzy.learn.controller;
 
 import java.util.Date;
 import java.util.HashMap;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,22 +13,24 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.fzy.learn.bean.User;
 
+
 /**
- * spring-boot-demo-2-1
- * 
- * @author wujing
+ * @author fuzhongyu
+ * @date 2018/2/8
  */
 @RestController
 @RequestMapping(value = "/index")
 public class IndexController {
 
-	@Value(value = "${roncoo.secret}")
+	private final static Logger logger= LoggerFactory.getLogger(IndexController.class);
+
+	@Value(value = "${custom.secret}")
 	private String secret;
 
-	@Value(value = "${roncoo.number}")
+	@Value(value = "${custom.number}")
 	private int id;
 
-	@Value(value = "${roncoo.desc}")
+	@Value(value = "${custom.desc}")
 	private String desc;
 
 	@RequestMapping
@@ -43,9 +44,9 @@ public class IndexController {
 		HashMap<String, Object> map = new HashMap<String, Object>();
 		map.put("title", "hello world");
 		map.put("name", name);
-		map.put("secret", secret);
-		map.put("id", id);
-		map.put("desc", desc);
+//		map.put("secret", secret);
+//		map.put("id", id);
+//		map.put("desc", desc);
 		return map;
 	}
 
@@ -55,7 +56,7 @@ public class IndexController {
 		User user = new User();
 		user.setId(id);
 		user.setName(name);
-		user.setDate(new Date());
+		user.setCreateTime(new Date());
 		return user;
 	}
 

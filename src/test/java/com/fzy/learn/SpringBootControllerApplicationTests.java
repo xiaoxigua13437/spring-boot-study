@@ -17,7 +17,7 @@ import com.fzy.learn.controller.IndexController;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class SpringBootDemo21ApplicationTests {
+public class SpringBootControllerApplicationTests {
 
 	private MockMvc mvc;
 
@@ -30,8 +30,8 @@ public class SpringBootDemo21ApplicationTests {
 	public void contextLoads() throws Exception {
 		RequestBuilder request = get("/index");
 		mvc.perform(request).andExpect(status().isOk()).andExpect(content().string("hello world"));
-		
-		request = get("/index/get").param("name", "无境");
+
+		request = get("http://127.0.0.1:8080/index/get").param("name", "无境");
 		mvc.perform(request).andExpect(status().isOk()).andExpect(content().string("{\"name\":\"无境\",\"title\":\"hello world\"}"));
 	}
 

@@ -1,19 +1,16 @@
-/**
- * 2015-2016 龙果学院 (www.roncoo.com)
- */
 package com.fzy.learn.bean;
 
 import java.util.Date;
 
 /**
- * 实体类
- * 
- * @author wujing
+ * 用户实体类
+ * @author fuzhongyu
+ * @date 2018/2/8
  */
 public class User {
 	private int id;
 	private String name;
-	private Date date;
+	private Date createTime;
 
 	public int getId() {
 		return id;
@@ -31,11 +28,11 @@ public class User {
 		this.name = name;
 	}
 
-	public Date getDate() {
-		return date;
+	public Date getCreateTime() {
+		return createTime;
 	}
 
-	public void setDate(Date date) {
-		this.date = date;
+	public void setCreateTime(Date createTime) {
+		this.createTime = createTime;
 	}
 }
