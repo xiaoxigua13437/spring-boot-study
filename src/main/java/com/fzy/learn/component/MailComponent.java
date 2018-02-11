@@ -51,7 +51,7 @@ public class MailComponent {
 		MimeMessageHelper helper = new MimeMessageHelper(message, true, "UTF-8");
 		InternetAddress from = new InternetAddress();
 		from.setAddress(mailSender.getUsername());
-		from.setPersonal("傅仲宇", "UTF-8");
+		from.setPersonal("fuzhongyu", "UTF-8");
 		helper.setFrom(from);
 		helper.setTo(email);
 		helper.setSubject("测试邮件");
