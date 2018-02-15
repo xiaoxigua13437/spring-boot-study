@@ -5,12 +5,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.boot.web.support.SpringBootServletInitializer;
-import org.springframework.cache.annotation.EnableCaching;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 
+//使用@WebFilter，@WebListener，@WebServlet需要用@ServletComponentScan注解进行注册
 @ServletComponentScan
 @SpringBootApplication
-// 开启缓存，需要显示的指定
-@EnableCaching
 public class Application extends SpringBootServletInitializer {
 
 	public static void main(String[] args){

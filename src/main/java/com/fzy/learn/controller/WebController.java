@@ -1,5 +1,6 @@
 package com.fzy.learn.controller;
 
+import javax.servlet.http.HttpSession;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -18,8 +19,9 @@ public class WebController {
 	private static final Logger logger =  LoggerFactory.getLogger(WebController.class);
 	
 	@RequestMapping("index_test")
-	public String index(ModelMap map,Boolean flag){
+	public String index(ModelMap map,HttpSession httpSession,Boolean flag){
 		logger.info("这里是controller");
+		logger.info("sessionID=" + httpSession.getId());
 		if (flag){
 			throw new RuntimeException("ceshilsjfdo");
 		}

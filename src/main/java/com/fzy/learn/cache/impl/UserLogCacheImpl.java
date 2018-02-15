@@ -8,8 +8,11 @@ import org.springframework.cache.annotation.CacheConfig;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.CachePut;
 import org.springframework.cache.annotation.Cacheable;
+import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.stereotype.Repository;
 
+// 开启缓存，需要显示的指定
+@EnableCaching
 @CacheConfig(cacheNames = "userLogCache")
 @Repository
 public class UserLogCacheImpl implements UserLogCache {
