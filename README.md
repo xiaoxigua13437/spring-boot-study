@@ -31,6 +31,8 @@
    
    #### 4.目录说明 
    
+        database为数据库脚本文件；
+   
         以下为/src/main/java/com/fzy/learn目录下的目录结构
    
    _目录结构：_ 
