@@ -21,13 +21,14 @@ public class MyConfig {
   private String bbb;
 
   @Value("${api.ccc}")
-  private String ccc;
+  private Integer ccc;
 
   /**
    * 当application和自定义配置文件中都含有这个属性的时候，会获取到application中的配置
    */
   @Value("${custom.name}")
   private String cName;
+
 
   public String getAaa() {
     return aaa;
@@ -45,11 +46,11 @@ public class MyConfig {
     this.bbb = bbb;
   }
 
-  public String getCcc() {
+  public Integer getCcc() {
     return ccc;
   }
 
-  public void setCcc(String ccc) {
+  public void setCcc(Integer ccc) {
     this.ccc = ccc;
   }
 

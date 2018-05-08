@@ -1,12 +1,18 @@
 package com.fzy.learn.bean;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import java.util.Date;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import org.hibernate.annotations.DynamicInsert;
+import org.hibernate.annotations.Generated;
+import org.hibernate.annotations.GenerationTime;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 @Entity
+@DynamicInsert(true)
 public class UserLog {
 
 	@Id
@@ -20,6 +26,8 @@ public class UserLog {
 	private String name;
 
 	@Column
+	//插入的时候自动更新数据库默认值
+	@Generated(value = GenerationTime.INSERT)
 	private String ip;
 
 

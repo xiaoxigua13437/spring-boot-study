@@ -25,9 +25,10 @@ public class SpringBootJpaApplicationTests {
 	public void insert() {
 		UserLog entity = new UserLog();
 		entity.setName("fzy");
-		entity.setIp("192.168.0.1");
-		entity.setCreateTime(new Date());
-		userLogDao.save(entity);
+//		entity.setIp("192.168.0.1");
+//		entity.setCreateTime(new Date());
+		UserLog log=userLogDao.save(entity);
+		System.out.println(userLogDao.findOne(log.getId()));
 	}
 
 	@Test

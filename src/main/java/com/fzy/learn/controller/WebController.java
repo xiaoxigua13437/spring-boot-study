@@ -22,9 +22,9 @@ public class WebController {
 	public String index(ModelMap map,HttpSession httpSession,Boolean flag){
 		logger.info("这里是controller");
 		logger.info("sessionID=" + httpSession.getId());
-		if (flag){
-			throw new RuntimeException("ceshilsjfdo");
-		}
+//		if (flag){
+//			throw new RuntimeException("ceshilsjfdo");
+//		}
 //		map.put("title", "hello world");
 		return "templates/index";
 	}
