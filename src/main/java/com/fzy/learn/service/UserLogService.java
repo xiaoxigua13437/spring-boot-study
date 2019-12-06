@@ -3,6 +3,8 @@ package com.fzy.learn.service;
 import com.fzy.learn.bean.User;
 import com.fzy.learn.bean.UserLog;
 import com.fzy.learn.dao.UserLogDao;
+import java.util.ArrayList;
+import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -25,6 +27,13 @@ public class UserLogService {
 
   public UserLog get(Integer id){
     return userLogDao.findOne(id);
+  }
+
+  public List<UserLog> findByIds(List<Integer> ids){
+    if (ids==null || ids.size()==0){
+      return new ArrayList<>();
+    }
+    return userLogDao.findByIds(ids);
   }
 
 }

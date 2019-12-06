@@ -3,8 +3,10 @@ package com.fzy.learn.controller;
 import com.fzy.learn.bean.UserLog;
 import com.fzy.learn.service.UserLogService;
 import io.swagger.annotations.ApiOperation;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -46,10 +48,16 @@ public class ApiController {
 		return userLog;
 	}
 
-	@PostMapping
+	@PostMapping(value = "logs")
 	public UserLog addUserLog(@RequestBody UserLog userLog){
 		UserLog log=userLogService.insert(userLog);
 		return log;
+	}
+
+	@GetMapping
+	public void getLogs(){
+		List<UserLog> list=userLogService.findByIds(Arrays.asList(new Integer[]{2,3}));
+		System.out.println(list.size());
 	}
 
 }

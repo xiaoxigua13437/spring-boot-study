@@ -15,10 +15,17 @@
 				<pattern>${PATTERN}</pattern>
 			</encoder>
 		</appender>
-		
+
+		<appender name="LOGSTASH" class="net.logstash.logback.appender.LogstashTcpSocketAppender">
+			<destination>127.0.0.1:8531</destination>
+			<encoder class="net.logstash.logback.encoder.LogstashEncoder"/>
+		</appender>
+
+
 		<logger name="com.fzy.learn" level="debug"/>
 
 		<root level="info">
+			<appender-ref ref="LOGSTASH"/>
 			<appender-ref ref="CONSOLE" />
 		</root>
 	</springProfile>
