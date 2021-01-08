@@ -1,5 +1,5 @@
 
-package com.yushu.learn.util.base;
+package com.yushu.study.util.base;
 
 import java.util.List;
 import java.util.Map;
