@@ -1,4 +1,4 @@
-package com.yushu.learn.util.base;
+package com.yushu.study.util.base;
 
 import java.io.Serializable;
 import java.util.List;
