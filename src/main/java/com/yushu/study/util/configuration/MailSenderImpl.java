@@ -1,4 +1,4 @@
-package com.yushu.learn.util.configuration;
+package com.yushu.study.util.configuration;
 
 import java.util.ArrayList;
 import java.util.Map;
@@ -13,6 +13,9 @@ import org.springframework.mail.javamail.JavaMailSenderImpl;
 
 /**
  * 实现多账号，轮询发送
+ *
+ * @author yushu.zhao
+ * @create 2021-01-14
  */
 @Configuration
 @EnableConfigurationProperties(MailProperties.class)
