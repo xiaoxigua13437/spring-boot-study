@@ -1,6 +1,6 @@
-package com.yushu.learn.util.configuration;
+package com.yushu.study.util.configuration;
 
-import com.yushu.learn.util.interceptor.LogInterceptor;
+import com.yushu.study.util.interceptor.LogInterceptor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.validation.beanvalidation.MethodValidationPostProcessor;
@@ -9,6 +9,14 @@ import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
+
+/**
+ *
+ * 自定义拦截器
+ *
+ * @author yushu.zhao
+ * @create 2021-01-14 16:04
+ */
 @Configuration
 public class CustomCorsConfiguration2 extends WebMvcConfigurerAdapter {
 
