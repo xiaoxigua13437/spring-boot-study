@@ -1,13 +1,16 @@
-package com.fzy.learn.handler;
+package com.yushu.study.handler;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ControllerAdvice;
-import org.springframework.web.bind.annotation.ExceptionHandler;
-import org.springframework.web.bind.annotation.ResponseStatus;
-import org.springframework.web.servlet.ModelAndView;
 
+
+/**
+ * 自定义统一异常处理类
+ *
+ * @author yushu.zhao
+ * @create 2021-01-14 16:11
+ */
 @ControllerAdvice
 public class BizExcepiton {
 
