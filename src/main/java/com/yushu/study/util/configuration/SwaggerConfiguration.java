@@ -1,4 +1,4 @@
-package com.yushu.learn.util.configuration;
+package com.yushu.study.util.configuration;
 
 import static springfox.documentation.builders.PathSelectors.regex;
 import org.springframework.context.annotation.Bean;
@@ -28,7 +28,7 @@ public class SwaggerConfiguration {
 	public Docket accessToken() {
 		return new Docket(DocumentationType.SWAGGER_2).groupName("api")// 定义组
 				.select() // 选择那些路径和api会生成document
-				.apis(RequestHandlerSelectors.basePackage("com.fzy.learn.controller")) // 拦截的包路径
+				.apis(RequestHandlerSelectors.basePackage("com.yushu.study.controller")) // 拦截的包路径
 				.paths(regex("/api/.*"))// 拦截的接口路径
 				.build() // 创建
 				.apiInfo(apiInfo()); // 配置说明
