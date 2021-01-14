@@ -1,4 +1,4 @@
-package com.yushu.learn.util.configuration;
+package com.yushu.study.util.configuration;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.PropertySource;
