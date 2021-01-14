@@ -1,6 +1,6 @@
-package com.yushu.learn.component;
+package com.yushu.study.component;
 
-import com.yushu.learn.util.configuration.MailSenderImpl;
+import com.yushu.study.util.configuration.MailSenderImpl;
 import freemarker.core.ParseException;
 import freemarker.template.MalformedTemplateNameException;
 import freemarker.template.TemplateException;
@@ -19,6 +19,13 @@ import org.springframework.ui.freemarker.FreeMarkerTemplateUtils;
 import org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer;
 
 
+/**
+ *
+ * 实现多账号轮询发送
+ *
+ * @author yushu.zhao
+ * @create 2021-01-13 15:32
+ */
 @Component
 public class MailComponent {
 	private static final String template = "mail/fzy.ftl";
