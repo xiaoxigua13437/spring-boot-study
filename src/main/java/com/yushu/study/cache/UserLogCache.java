@@ -1,7 +1,7 @@
-package com.yushu.learn.cache;
+package com.yushu.study.cache;
 
 
-import com.yushu.learn.bean.UserLog;
+import com.yushu.study.bean.UserLog;
 
 public interface UserLogCache {
 

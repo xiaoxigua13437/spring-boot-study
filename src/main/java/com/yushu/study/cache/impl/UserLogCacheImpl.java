@@ -1,8 +1,8 @@
-package com.yushu.learn.cache.impl;
+package com.yushu.study.cache.impl;
 
-import com.yushu.learn.bean.UserLog;
-import com.yushu.learn.cache.UserLogCache;
-import com.yushu.learn.dao.UserLogDao;
+import com.yushu.study.bean.UserLog;
+import com.yushu.study.cache.UserLogCache;
+import com.yushu.study.dao.UserLogDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheConfig;
 import org.springframework.cache.annotation.CacheEvict;
