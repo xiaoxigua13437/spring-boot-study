@@ -1,4 +1,4 @@
-package com.yushu.learn.util.interceptor;
+package com.yushu.study.util.interceptor;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -8,8 +8,8 @@ import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 
 /**
- * 日志拦截器
- * @author Fucai
+ * 自定义日志拦截器
+ * @author yushu.zhao
  * @date 2018/4/3
  */
 public class LogInterceptor implements HandlerInterceptor {
@@ -19,6 +19,7 @@ public class LogInterceptor implements HandlerInterceptor {
 
 	/**
 	 * 拦截去前置处理器
+	 *
 	 * @param request
 	 * @param response
 	 * @param handler
@@ -38,6 +39,7 @@ public class LogInterceptor implements HandlerInterceptor {
 
 	/**
 	 * 拦截器后置处理器
+	 *
 	 * @param request
 	 * @param response
 	 * @param handler
