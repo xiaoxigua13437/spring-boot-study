@@ -11,6 +11,7 @@ import org.springframework.cache.annotation.Cacheable;
 import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.stereotype.Repository;
 
+
 // 开启缓存，需要显示的指定
 @EnableCaching
 @CacheConfig(cacheNames = "userLogCache")
