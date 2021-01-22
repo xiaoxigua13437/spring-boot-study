@@ -1,4 +1,4 @@
-package com.yushu.learn.bean;
+package com.yushu.study.bean;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import java.util.Date;
