@@ -1,4 +1,4 @@
-package com.yushu.learn.bean;
+package com.yushu.study.bean;
 
 import java.util.Date;
 
