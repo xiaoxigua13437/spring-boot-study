@@ -1,4 +1,4 @@
-package com.yushu.learn.component;
+package com.yushu.study.component;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;

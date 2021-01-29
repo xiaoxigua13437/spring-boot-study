@@ -1,4 +1,4 @@
-package com.yushu.learn.component;
+package com.yushu.study.component;
 
 import javax.jms.Queue;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -7,6 +7,10 @@ import org.springframework.jms.core.JmsMessagingTemplate;
 import org.springframework.stereotype.Component;
 
 
+/**
+ * @author yushu.zhao
+ * @create 2021
+ */
 //@Component
 public class JmsComponent {
 
