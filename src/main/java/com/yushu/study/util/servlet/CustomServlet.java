@@ -1,4 +1,4 @@
-package com.yushu.learn.util.servlet;
+package com.yushu.study.util.servlet;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
