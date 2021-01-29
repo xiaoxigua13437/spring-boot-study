@@ -1,8 +1,8 @@
-package com.yushu.learn;
+package com.yushu.study;
 
-import com.yushu.learn.bean.User;
-import com.yushu.learn.dao.mybatis.UserMapper;
-import com.yushu.learn.dao.mybatis.UserXmlMapper;
+import com.yushu.study.bean.User;
+import com.yushu.study.dao.mybatis.UserMapper;
+import com.yushu.study.dao.mybatis.UserXmlMapper;
 import java.util.Date;
 import java.util.List;
 

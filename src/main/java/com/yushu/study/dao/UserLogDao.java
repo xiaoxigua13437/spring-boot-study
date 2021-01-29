@@ -1,6 +1,6 @@
-package com.yushu.learn.dao;
+package com.yushu.study.dao;
 
-import com.yushu.learn.bean.UserLog;
+import com.yushu.study.bean.UserLog;
 import java.util.List;
 
 import org.springframework.data.domain.Page;

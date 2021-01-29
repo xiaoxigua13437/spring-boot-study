@@ -1,8 +1,8 @@
-package com.fzy.learn.dao;
+package com.yushu.study.dao;
 
 
-import com.fzy.learn.bean.User;
-import com.fzy.learn.util.base.Page;
+import com.yushu.study.bean.User;
+import com.yushu.study.util.base.Page;
 
 public interface UserDao {
 

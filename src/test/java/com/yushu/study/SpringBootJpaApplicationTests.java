@@ -1,7 +1,7 @@
-package com.yushu.learn;
+package com.yushu.study;
 
-import com.yushu.learn.bean.UserLog;
-import com.yushu.learn.dao.UserLogDao;
+import com.yushu.study.bean.UserLog;
+import com.yushu.study.dao.UserLogDao;
 import java.util.Date;
 import org.junit.Test;
 import org.junit.runner.RunWith;

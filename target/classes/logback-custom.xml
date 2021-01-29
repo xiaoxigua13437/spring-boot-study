@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+	<!-- 文件输出格式 %d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符 -->
+	<property name="PATTERN" value="%-12(%d{yyyy-MM-dd HH:mm:ss.SSS}) |-%-5level [%thread] %c [%L] -| %msg%n" />
+	<!-- test文件路径 -->
+	<property name="TEST_FILE_PATH" value="/Users/yushu.zhao/Desktop/logs/test/aa.log" />
+	<!-- pro文件路径 -->
+	<property name="PRO_FILE_PATH" value="/Users/yushu.zhao/Desktop/logs/pro/aa.log" />
+
+	<!-- 开发环境 -->
+	<springProfile name="dev">
+		<appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+			<encoder>
+				<pattern>${PATTERN}</pattern>
+			</encoder>
+		</appender>
+
+		<appender name="LOGSTASH" class="net.logstash.logback.appender.LogstashTcpSocketAppender">
+			<destination>127.0.0.1:8531</destination>
+			<encoder class="net.logstash.logback.encoder.LogstashEncoder"/>
+		</appender>
+
+
+		<logger name="com.fzy.learn" level="debug"/>
+
+		<root level="info">
+			<appender-ref ref="LOGSTASH"/>
+			<appender-ref ref="CONSOLE" />
+		</root>
+	</springProfile>
+
+	<!-- 测试环境 -->
+	<springProfile name="test">
+		<!-- 每天产生一个文件 -->
+		<appender name="TEST-FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+			<!-- 文件路径 -->
+			<file>${TEST_FILE_PATH}</file>
+			<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+				<!-- 文件名称 -->
+				<fileNamePattern>${TEST_FILE_PATH}/info.%d{yyyy-MM-dd}.log</fileNamePattern>
+				<!-- 文件最大保存历史数量 -->
+				<MaxHistory>100</MaxHistory>
+			</rollingPolicy>
+			
+			<layout class="ch.qos.logback.classic.PatternLayout">
+				<pattern>${PATTERN}</pattern>
+			</layout>
+		</appender>
+		
+		<root level="info">
+			<appender-ref ref="TEST-FILE" />
+		</root>
+	</springProfile>
+
+	<!-- 生产环境 -->
+	<springProfile name="prod">
+		<appender name="PROD_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+			<file>${PRO_FILE_PATH}</file>
+			<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+				<fileNamePattern>${PRO_FILE_PATH}/%d{yyyy-MM-dd}.log</fileNamePattern>
+				<MaxHistory>100</MaxHistory>
+			</rollingPolicy>
+			<layout class="ch.qos.logback.classic.PatternLayout">
+				<pattern>${PATTERN}</pattern>
+			</layout>
+		</appender>
+		
+		<root level="info">
+			<appender-ref ref="PROD_FILE" />
+		</root>
+	</springProfile>
+</configuration>

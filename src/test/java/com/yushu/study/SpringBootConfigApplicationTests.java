@@ -1,6 +1,6 @@
-package com.yushu.learn;
+package com.yushu.study;
 
-import com.yushu.learn.util.configuration.MyConfig;
+import com.yushu.study.util.configuration.MyConfig;
 import javax.annotation.PostConstruct;
 import org.junit.Test;
 import org.junit.runner.RunWith;

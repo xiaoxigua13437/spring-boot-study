@@ -1,6 +1,6 @@
-package com.yushu.learn;
+package com.yushu.study;
 
-import com.yushu.learn.component.RedisComponent;
+import com.yushu.study.component.RedisComponent;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

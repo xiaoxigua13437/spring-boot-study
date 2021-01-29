@@ -4,9 +4,9 @@
 	<!-- 文件输出格式 %d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符 -->
 	<property name="PATTERN" value="%-12(%d{yyyy-MM-dd HH:mm:ss.SSS}) |-%-5level [%thread] %c [%L] -| %msg%n" />
 	<!-- test文件路径 -->
-	<property name="TEST_FILE_PATH" value="/Users/fuzhongyu/Desktop/logs/test/aa.log" />
+	<property name="TEST_FILE_PATH" value="/Users/yushu.zhao/Desktop/logs/test/aa.log" />
 	<!-- pro文件路径 -->
-	<property name="PRO_FILE_PATH" value="/Users/fuzhongyu/Desktop/logs/pro/aa.log" />
+	<property name="PRO_FILE_PATH" value="/Users/yushu.zhao/Desktop/logs/pro/aa.log" />
 
 	<!-- 开发环境 -->
 	<springProfile name="dev">

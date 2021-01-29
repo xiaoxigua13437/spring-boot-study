@@ -1,7 +1,7 @@
-package com.yushu.learn.service;
+package com.yushu.study.service;
 
-import com.yushu.learn.bean.UserLog;
-import com.yushu.learn.dao.UserLogDao;
+import com.yushu.study.bean.UserLog;
+import com.yushu.study.dao.UserLogDao;
 import java.util.ArrayList;
 import java.util.List;
 

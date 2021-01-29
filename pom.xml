@@ -3,7 +3,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.fzy.learn</groupId>
+	<groupId>com.yushu.learn</groupId>
 	<artifactId>spring-boot</artifactId>
 	<version>1.0.0</version>
 	<packaging>jar</packaging>
@@ -212,7 +212,7 @@
 				</dependencies>
 				<configuration>
 					<!-- 你的启动类 -->
-					<mainClass>com.fzy.learn.Application</mainClass>
+					<mainClass>com.yushu.study.Application</mainClass>
 				</configuration>
 			</plugin>
 		</plugins>

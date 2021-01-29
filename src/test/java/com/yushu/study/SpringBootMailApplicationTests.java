@@ -1,6 +1,6 @@
-package com.yushu.learn;
+package com.yushu.study;
 
-import com.yushu.learn.component.MailComponent;
+import com.yushu.study.component.MailComponent;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

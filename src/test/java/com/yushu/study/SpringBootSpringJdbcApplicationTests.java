@@ -1,8 +1,8 @@
-package com.yushu.learn;
+package com.yushu.study;
 
-import com.yushu.learn.bean.User;
-import com.yushu.learn.dao.UserDao;
-import com.yushu.learn.util.base.Page;
+import com.yushu.study.bean.User;
+import com.yushu.study.dao.UserDao;
+import com.yushu.study.util.base.Page;
 import java.util.Date;
 import org.junit.Test;
 import org.junit.runner.RunWith;

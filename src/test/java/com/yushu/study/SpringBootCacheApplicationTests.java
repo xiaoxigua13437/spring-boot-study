@@ -1,7 +1,7 @@
-package com.yushu.learn;
+package com.yushu.study;
 
-import com.yushu.learn.bean.UserLog;
-import com.yushu.learn.cache.UserLogCache;
+import com.yushu.study.bean.UserLog;
+import com.yushu.study.cache.UserLogCache;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

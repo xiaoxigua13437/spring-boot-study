@@ -1,6 +1,6 @@
-package com.fzy.learn.dao.mybatis;
+package com.yushu.study.dao.mybatis;
 
-import com.fzy.learn.bean.User;
+import com.yushu.study.bean.User;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Result;

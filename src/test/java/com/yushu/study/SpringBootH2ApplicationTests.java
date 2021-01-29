@@ -1,6 +1,6 @@
-package com.yushu.learn;
+package com.yushu.study;
 
-import com.yushu.learn.bean.UserLog;
+import com.yushu.study.bean.UserLog;
 import org.apache.http.HttpException;
 import org.apache.http.HttpHost;
 import org.apache.http.HttpRequest;

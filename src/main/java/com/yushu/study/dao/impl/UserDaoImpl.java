@@ -1,10 +1,10 @@
-package com.yushu.learn.dao.impl;
+package com.yushu.study.dao.impl;
 
-import com.yushu.learn.bean.User;
-import com.yushu.learn.dao.UserDao;
-import com.yushu.learn.util.base.JdbcDaoImpl;
-import com.yushu.learn.util.base.Page;
-import com.yushu.learn.util.base.Sql;
+import com.yushu.study.bean.User;
+import com.yushu.study.dao.UserDao;
+import com.yushu.study.util.base.JdbcDaoImpl;
+import com.yushu.study.util.base.Page;
+import com.yushu.study.util.base.Sql;
 import org.springframework.stereotype.Repository;
 
 @Repository

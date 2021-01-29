@@ -1,9 +1,9 @@
-package com.yushu.learn.service;
+package com.yushu.study.service;
 
-import com.yushu.learn.bean.User;
-import com.yushu.learn.bean.UserLog;
-import com.yushu.learn.dao.UserDao;
-import com.yushu.learn.dao.UserLogDao;
+import com.yushu.study.bean.User;
+import com.yushu.study.bean.UserLog;
+import com.yushu.study.dao.UserDao;
+import com.yushu.study.dao.UserLogDao;
 import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;

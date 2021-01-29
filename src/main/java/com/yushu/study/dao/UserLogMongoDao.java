@@ -1,6 +1,6 @@
-package com.yushu.learn.dao;
+package com.yushu.study.dao;
 
-import com.yushu.learn.bean.UserLog;
+import com.yushu.study.bean.UserLog;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.mongodb.repository.MongoRepository;
