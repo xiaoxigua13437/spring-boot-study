@@ -1,9 +1,9 @@
-package com.yushu.learn.controller;
+package com.yushu.study.controller;
 
 import java.util.Date;
 import java.util.HashMap;
 
-import com.yushu.learn.bean.User;
+import com.yushu.study.bean.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;

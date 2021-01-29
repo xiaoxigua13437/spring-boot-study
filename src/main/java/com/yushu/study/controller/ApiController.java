@@ -1,16 +1,14 @@
-package com.fzy.learn.controller;
+package com.yushu.study.controller;
 
-import com.fzy.learn.bean.UserLog;
-import com.fzy.learn.service.UserLogService;
+import com.yushu.study.bean.UserLog;
+import com.yushu.study.service.UserLogService;
 import io.swagger.annotations.ApiOperation;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
